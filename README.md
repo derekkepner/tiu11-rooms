@@ -9,6 +9,7 @@ A lightweight Ruby on Rails application for managing room reservations.
 
 ## Scope Decisions
 * For the sake of time, cut the idea for different user roles having different permissions. 
+* Project took 3 hours. I used the last 20-30 minutes to apply some simple handwritten CSS styles to make things nice and user friendly. 
 
 ## What To Do Next
 * Authentication and Permissions: Implement user login and permissions to distinguish between staff and admin. 
