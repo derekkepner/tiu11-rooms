@@ -1,0 +1,32 @@
+<div id="<%= dom_id reservation %>">
+  <p>
+    <strong>Site:</strong>
+    <%= reservation.room.site.name %>
+  </p>
+  
+  <p>
+    <strong>Room:</strong>
+    <%= reservation.room.number %>
+  </p>
+
+  <p>
+    <strong>Customer name:</strong>
+    <%= reservation.customer_name %>
+  </p>
+
+  <p>
+    <strong>Start time:</strong>
+    <%= reservation.start_time %>
+  </p>
+
+  <p>
+    <strong>End time:</strong>
+    <%= reservation.end_time %>
+  </p>
+
+  <p>
+    <strong>Status:</strong>
+    <%= reservation.status %>
+  </p>
+
+</div>

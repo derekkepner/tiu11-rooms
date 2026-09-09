@@ -1,0 +1,123 @@
+/*
+* This is a manifest file that'll be compiled into application.css.
+*
+* With Propshaft, assets are served efficiently without preprocessing steps. You can still include
+* application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
+* cascading order, meaning styles declared later in the document or manifest will override earlier ones,
+* depending on specificity.
+*
+* Consider organizing styles into separate files for maintainability.
+*/
+
+:root
+{
+    --white: #FFFFFF;
+    --lightest-grey: #F7F6F5;
+    --system: #345ABC;
+    --red: #c92424;
+}
+
+body 
+{
+    font-family: "Helvetica Neue", sans-serif;
+    background: var(--lightest-grey);
+    margin: 0px;
+    margin-bottom: 48px;
+}
+
+body > :not(header)
+{
+    margin: 24px;
+}
+
+a:not(ul a, header a), button
+{
+    color: var(--white);
+    background: var(--system);
+    /* font-weight: 550; */
+    text-decoration: none;
+    padding: 10px;
+    display: inline;
+    cursor: pointer;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+
+ul a
+{
+    color: var(--white);
+    background: var(--system);
+    /* font-weight: 550; */
+    text-decoration: none;
+    padding: 10px;
+    /* display: inline; */
+    /* cursor: pointer; */
+    /* box-shadow: none; */
+    /* outline: none; */
+    /* border: none; */
+    font-size: 16px;
+}
+
+ul
+{
+    list-style-type: none;
+    display: inline-block;
+    margin-inline: 0px;
+    padding-inline: 0px;
+}
+
+ul li 
+{
+    display: inline-block;
+}
+
+button
+{
+    margin-top: 20px;
+}
+
+form[action]:has(input[name="_method"][value="delete"]) button, 
+form[action]:has(input[name="_method"][value="delete"]) input[type="submit"]
+{
+    background: var(--red);
+}
+
+p:has(> a:first-child)
+{
+    margin-top: 24px;
+    margin-bottom: 64px;
+}
+
+div:has(> a:first-child)
+{
+    margin-top: 24px;
+    margin-bottom: 64px;
+}
+
+header nav
+{
+    background: var(--system);
+    /* height: 42px; */
+    min-height: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    padding-inline: 24px;
+}
+
+header a
+{
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+}
+
+header a.active
+{
+    font-weight: 550;
+}

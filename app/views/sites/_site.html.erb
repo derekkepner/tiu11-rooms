@@ -1,0 +1,16 @@
+<div id="<%= dom_id site %>">
+  <p>
+    <strong>Name:</strong>
+    <%= site.name %>
+  </p>
+  <p><strong>Rooms:</strong></p>
+  <% if site.rooms.any? %>
+    <ul>
+      <% site.rooms.each do |room| %>
+        <li>
+          <%= link_to room.number, room %>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
+</div>
