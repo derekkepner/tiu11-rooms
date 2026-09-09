@@ -1,24 +1,17 @@
-# README
+# Room Reservation System Challenge
+A lightweight Ruby on Rails application for managing room reservations. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![App Screenshot](screenshot.png)
 
-Things you may want to cover:
+---
 
-* Ruby version
+## Scope Decisions
+* For the sake of time, cut the idea for different user roles having different permissions. 
 
-* System dependencies
+## What To Do Next
+* Authentication and Permissions: Implement user login and permissions to distinguish between staff and admin. 
+* UI: More styles and formatting work to make the app more user-friendly. 
+* Times presented in the local time zone instead of UTC. 
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## AI Usage Log
+* AI didn't write any code but I consulted with Gemini to walk me through or point me in the right direction with specific Ruby and Rails concepts such as form helpers, validation, routing. 
