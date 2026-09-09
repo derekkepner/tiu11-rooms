@@ -5,6 +5,8 @@ A lightweight Ruby on Rails application for managing room reservations.
 
 ---
 
+![Data Structure Sketch](data_structure_sketch.png)
+
 ## Scope Decisions
 * For the sake of time, cut the idea for different user roles having different permissions. 
 
